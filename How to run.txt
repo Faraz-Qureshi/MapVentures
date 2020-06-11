@@ -1,0 +1,15 @@
+Extract Library.rar here
+
+Open the folder as a Unity project.
+
+Now build the project & run
+
+
+Game Controls:
+
+arrow keys for displacement
+
+down arrow for crouch
+'z' for jump
+'x' for firing balls
+'x' hold for dashing
