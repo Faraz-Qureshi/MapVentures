@@ -1,6 +1,6 @@
 # SMB-clone
 
-Clone of Super Mario Bros, World 1-1 through 1-4. Made with Unity.
+Clone of Super Mario Bros, the Game has variable difficulty and with each iterations new maps will be generated through the  process of PCG. Made with Unity.
 
 ***
 ### Controls
