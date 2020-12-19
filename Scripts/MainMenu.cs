@@ -152,14 +152,6 @@ public class MainMenu : MonoBehaviour {
 			}
 		}
 
-				if (map_val == 2)
-		{
-			if (!volumePanelActive) {
-			t_GameStateManager.sceneToLoad = "World 1-1";
-			SceneManager.LoadScene ("Level Start Screen");
-			}
-		}
-
 	}
 
 	public void StartWorld1_2() {

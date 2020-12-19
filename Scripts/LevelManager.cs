@@ -405,6 +405,10 @@ public class LevelManager : MonoBehaviour {
 	public void LoadNewLevel(string sceneName, float delay = loadSceneDelay) {
 		t_GameStateManager.SaveGameState ();
 		t_GameStateManager.ConfigNewLevel ();
+		if(sceneName == "\0")
+        {
+			sceneName = "World 10-1";
+        }
 		t_GameStateManager.sceneToLoad = sceneName;
 		LoadSceneDelay ("Level Start Screen", delay);
 	}

@@ -44,6 +44,17 @@ public class GameOverScreen : MonoBehaviour {
 
 	IEnumerator LoadSceneDelayCo(string sceneName, float delay = 0) {
 		yield return new WaitForSecondsRealtime (delay);
+		if(sceneName == "%0")
+        {
+			int num = Random.Range(0, 12);
+			string[] sceneArray = new string[]
+			{
+				"World 1-1", "World 2-1", "World 13-1", "World 4-1", "World 5-1", "World 6-1",
+				"World 7-1", "World 8-1", "World 9-1", "World 10-1", "World 11-1", "World 12-1"
+			};
+
+			sceneName = sceneArray[num];
+		}
 		SceneManager.LoadScene (sceneName);
 	}
 
