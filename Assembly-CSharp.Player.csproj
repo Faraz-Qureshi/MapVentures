@@ -61,7 +61,6 @@
     <Compile Include="Assets\Scripts\MarioStompBox.cs" />
     <Compile Include="Assets\Scripts\LevelStartScreen.cs" />
     <Compile Include="Assets\Scripts\Piranha.cs" />
-    <Compile Include="Assets\Global Scripts\LevelGenerator.cs" />
     <Compile Include="Assets\Scripts\MarioFireball.cs" />
     <Compile Include="Assets\Scripts\_common\PatrolVertical.cs" />
     <Compile Include="Assets\Scripts\KillPlane.cs" />
@@ -69,10 +68,8 @@
     <Compile Include="Assets\Scripts\BowserFire.cs" />
     <Compile Include="Assets\Scripts\RandomCoinGenerator.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Global Scripts\MapSettings.cs" />
     <Compile Include="Assets\Scripts\_common\CollectibleBlock.cs" />
     <Compile Include="Assets\Scripts\_common\Enemy.cs" />
-    <Compile Include="Assets\Global Scripts\MapFunctions.cs" />
     <Compile Include="Assets\Scripts\PipeWarpSide.cs" />
     <Compile Include="Assets\Scripts\Starman.cs" />
     <Compile Include="Assets\Scripts\MovingPlatformObjectDetector.cs" />
