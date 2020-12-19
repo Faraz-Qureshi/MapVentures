@@ -3,6 +3,11 @@
 Clone of Super Mario Bros, the Game has variable difficulty and with each iterations new maps will be generated through the  process of PCG. Made with Unity.
 
 ***
+### How to Run:
+Extract Assets folder and update the given Assets folder. Add the whole folder to Unity v2020 and then run.
+Otherwise only extract the Build_Version.zip and run separately
+
+***
 ### Controls
 * Move: Left/Right
 * Crouch: Down
