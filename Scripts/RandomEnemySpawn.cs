@@ -41,10 +41,18 @@ public class RandomEnemySpawn : MonoBehaviour
 
         height = rnd.SpawnHeight;
 
-        Enemy_count = 10; //just for initial runs;
+        Enemy_count = 8; //just for initial runs;
         if (rnd.score > 4500)
         {
-            Enemy_count = 15;//increasing enemies in case of player's performance
+            Enemy_count = 16;//increasing enemies in case of player's performance
+        }
+        if(rnd.score > 12000)
+        {
+            Enemy_count = 20;//increasing enemies in case of player's performance
+            if(Enemy_count > (width/3+5))
+            {
+                Enemy_count = 20;
+            }
         }
         int[] mapping = new int[rnd.width]; 
         //the basic idea to use it to ensure not any two enemies reside over each other.
@@ -62,7 +70,20 @@ public class RandomEnemySpawn : MonoBehaviour
             int rand_val = UnityEngine.Random.Range(15, width-1);
             if (mapping[rand_val] == 0)
             {
-                int selectEnemy = UnityEngine.Random.Range(0, 2);
+                int selectEnemy = 0;
+                if (rnd.score > 10000)
+                {
+                    selectEnemy = UnityEngine.Random.Range(1, 3);
+                }
+                else if(rnd.score > 1000)
+                {
+                    selectEnemy = UnityEngine.Random.Range(1, 2);
+                }
+                else if(rnd.score < 500)
+                {
+                    selectEnemy = UnityEngine.Random.Range(0, 1);
+                }
+
                 spawnPos = new Vector2(rand_val, height);
                     if (selectEnemy == 0)
                     {

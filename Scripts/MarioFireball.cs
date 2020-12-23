@@ -47,9 +47,10 @@ public class MarioFireball : MonoBehaviour {
 			if (normal == leftSide || normal == rightSide) { // explode if side hit
 				Explode ();
 			} else if (normal == bottomSide) { // bounce off
-				m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, absVelocity.y);
+			//m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, absVelocity.y);
+				//Explode();
 			} else {
-				m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, -absVelocity.y);
+				//m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, -absVelocity.y);
 			}
 		}
 	}

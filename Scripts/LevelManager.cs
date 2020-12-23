@@ -333,6 +333,10 @@ public class LevelManager : MonoBehaviour {
 				ReloadCurrentLevel (deadSound.length, timeup);
 			} else {
 				LoadGameOver (deadSound.length, timeup);
+				t_GameStateManager.scores = 0;
+				t_GameStateManager.coins = 0;
+				t_GameStateManager.lives = 3;
+				//you again start from 0 so its fair..xD
 				Debug.Log(this.name + " MarioRespawn: all dead");
 			}
 		}
@@ -407,7 +411,7 @@ public class LevelManager : MonoBehaviour {
 		t_GameStateManager.ConfigNewLevel ();
 		if(sceneName == "\0")
         {
-			sceneName = "World 10-1";
+			sceneName = "Random PCG MAP";
         }
 		t_GameStateManager.sceneToLoad = sceneName;
 		LoadSceneDelay ("Level Start Screen", delay);
@@ -446,6 +450,7 @@ public class LevelManager : MonoBehaviour {
 			PlayerPrefs.SetInt ("highScore", scores);
 		}
 		t_GameStateManager.timeup = timeup;
+		
 		LoadSceneDelay ("Game Over Screen", delay);
 	}
 

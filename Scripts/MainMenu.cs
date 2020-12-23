@@ -23,6 +23,8 @@ public class MainMenu : MonoBehaviour {
 		t_GameStateManager.ConfigNewGame ();
 
 		int currentHighScore = PlayerPrefs.GetInt ("highScore", 0);
+	
+
 		TopText.text = "TOP- " + currentHighScore.ToString ("D6");
 
 		if (!PlayerPrefs.HasKey ("soundVolume")) {
@@ -64,6 +66,12 @@ public class MainMenu : MonoBehaviour {
 		int map_val = UnityEngine.Random.Range(1,13);
 		Console.WriteLine("{0}", map_val);
 
+		
+		//since the previous changes aren't necessary as the game is totally PCG generated so it doesn't matter what type of map is being generated initally, this 
+		// hard-coded randomness is unnecessary now
+		//As World 5-5 is the random PCG ..xD
+
+		map_val = 15;
 		//map_val = 4;
 		if (map_val == 1)
 		{
@@ -149,6 +157,16 @@ public class MainMenu : MonoBehaviour {
 			if (!volumePanelActive) {
 			t_GameStateManager.sceneToLoad = "World 12-1";
 			SceneManager.LoadScene ("Level Start Screen");
+			}
+		}
+
+		if (map_val == 15)
+		{
+			if (!volumePanelActive)
+			{
+
+				t_GameStateManager.sceneToLoad = "World 1-1";
+				SceneManager.LoadScene("Level Start Screen");
 			}
 		}
 

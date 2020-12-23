@@ -9,7 +9,7 @@ public class Castle : MonoBehaviour {
 	private bool moveFlag;
 
 	private float flagVelocityY = 0.025f;
-	public string sceneName = "World 10-1";
+	public string sceneName = "World 5-5";
 	public string[] sceneArray = new string[] 
 	{
 		"World 1-1", "World 2-1", "World 13-1", "World 4-1", "World 5-1", "World 6-1",
